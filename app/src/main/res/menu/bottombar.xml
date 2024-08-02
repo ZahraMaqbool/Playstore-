@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/searchicon"
+        android:contentDescription="search the content"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/moreoption"
+        android:title="more"
+        android:contentDescription="search more in discription"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/faviourt"
+        android:title="favrouit"
+        android:icon="@drawable/heart_favourit_icon"
+        android:iconTint="@color/red"
+        />
+    <item
+        android:id="@+id/faviourt2"
+        android:title="favrouit"
+        android:icon="@drawable/heart_favourit_icon"
+        />
+    <item
+        android:id="@+id/faviourt3"
+        android:title="favrouit"
+        android:icon="@drawable/heart_favourit_icon"
+        android:iconTint="@color/pink"
+        />
+</menu>

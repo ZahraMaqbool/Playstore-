@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvPlayStore"-->
+    <!--        android:layout_width="230dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:text="PlayStore "-->
+    <!--        android:textStyle="italic"-->
+    <!--        android:textSize="30sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <EditText
+        android:id="@+id/tvText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:background="#40E6D7"
+        android:textColor="#DEE6E5"
+        android:elevation="20dp"
+        android:fontFamily="@font/raillinc"
+        android:drawableLeft="@drawable/searchicon"
+        android:drawableRight="@drawable/searchicon"
+        android:hint="Search here"
+        android:paddingLeft="13dp"
+        android:paddingEnd="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/Notify"-->
+<!--        android:layout_width="32dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:src="@drawable/notificationicon"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/tvText"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/tvText" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="12dp"-->
+<!--        android:id="@+id/view2"-->
+<!--        android:layout_marginStart="300dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/Notify"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/notificationicon"
+        app:layout_constraintStart_toEndOf="@+id/tvText"
+        app:layout_constraintTop_toTopOf="@+id/tvText" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+        android:layout_marginStart="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:thicknessRatio="1.9">
+
+    <ImageView
+        android:id="@+id/ivDpImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3D9A91"
+        app:tabTextColor="#DEE6E5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvText">
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For You"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="106dp" />
+    <com.google.android.material.tabs.TabItem
+        android:text="Top Chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:text="Kids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:text="Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottombar"
+        android:background="#009688"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRecyclerview"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
