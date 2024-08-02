@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivDpImage;
     RecyclerView rvRecyclerview;
 
-    VerticalAppListAdapter verticalAppListAdapter;
 
     @SuppressLint("MissingInflatedId")
     @Override
