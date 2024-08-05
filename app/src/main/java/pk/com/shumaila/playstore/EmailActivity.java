@@ -8,6 +8,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
+
+
+// dsfsdjg
 public class EmailActivity extends AppCompatActivity {
 
     @Override
